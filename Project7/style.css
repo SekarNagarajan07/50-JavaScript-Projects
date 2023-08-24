@@ -12,10 +12,10 @@ body {
 }
 
 :root {
-  --left-bg-color: #0077b6;
-  --right-bg-color: #2f3e46;
-  --left-btn-hover-color: #00b4d8;
-  --right-btn-hover-color: #354f52;
+  --left-bg-color: rgba(87, 84, 236, 0.7);
+  --right-bg-color: rgba(43, 43, 43, 0.8);
+  --left-btn-hover-color: rgba(87, 84, 236, 1);
+  --right-btn-hover-color: rgba(28, 122, 28, 1);
   --hover-width: 75%;
   --other-width: 25%;
   --speed: 1000ms;
@@ -54,7 +54,7 @@ h1 {
   border-color: var(--left-btn-hover-color);
 }
 
-.split.left .btn:hover {
+.split.right .btn:hover {
   background-color: var(--right-btn-hover-color);
   border-color: var(--right-btn-hover-color);
 }
@@ -88,7 +88,7 @@ h1 {
 }
 
 .split.right {
-  left: 0;
+  right: 0;
   background: url(image/xbox.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -109,19 +109,19 @@ h1 {
   transition: all var(--speed) ease-in-out;
 }
 
-.hover-left .left {
+.hover_left .left {
   width: var(--hover-width);
 }
 
-.hover-left .right {
+.hover_left .right {
   width: var(--other-width);
 }
 
-.hover-right .right {
+.hover_right .right {
   width: var(--hover-width);
 }
 
-.hover-right .left {
+.hover_right .left {
   width: var(--other-width);
 }
 
