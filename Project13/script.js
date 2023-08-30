@@ -33,6 +33,7 @@ function randomSelect() {
 
   const interval = setInterval(() => {
     const randomTag = pickRandomTag();
+
     if (randomTag !== undefined) {
       highlightTag(randomTag);
 
@@ -61,5 +62,5 @@ function highlightTag(tag) {
   tag.classList.add("highlight");
 }
 function unhighlightTag(tag) {
-  tag.classList.add("highlight");
+  tag.classList.remove("highlight");
 }
