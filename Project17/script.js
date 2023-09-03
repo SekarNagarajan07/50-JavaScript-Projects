@@ -9,6 +9,7 @@ const form = document.getElementById("form");
 const search = document.getElementById("search");
 
 // Get initial movies
+getMovies(API_URL);
 
 async function getMovies(url) {
   const res = await fetch(url);
@@ -36,4 +37,14 @@ function showMovies(movies) {
     <h3>Overview</h3> ${overview}</div>`;
     main.appendChild(movieE1);
   });
+}
+
+function getClassByRate(vote) {
+  if (vote >= 8) {
+    return "green";
+  } else if (vote >= 5) {
+    return "orange";
+  } else {
+    return "red";
+  }
 }
