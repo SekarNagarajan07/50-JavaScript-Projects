@@ -29,3 +29,6 @@ h2 {
   width: 350px;
   max-width: 100%;
 }
+.result-container {
+  background-color: #ffffff;
+}
